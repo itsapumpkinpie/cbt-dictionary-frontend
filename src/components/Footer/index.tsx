@@ -7,5 +7,4 @@ const Footer: react.FC = () => {
         </footer>
     )
 }
-
 export default Footer
