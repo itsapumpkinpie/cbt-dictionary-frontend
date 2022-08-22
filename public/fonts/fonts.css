@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'PressStart2P';
+    src: local('PressStart2P'), url('PressStart2P-Regular.eot');
+    src: local('PressStart2P'), url('PressStart2P-Regular.eot?#iefix') format('embedded-opentype'),
+    url('PressStart2P-Regular.woff') format('woff'),
+    url('PressStart2P-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mulish';
+    src: local('Mulish-Extra-Bold'),
+    url('Mulish-ExtraBold.woff2') format('woff2'),
+    url('Mulish-ExtraBold.woff') format('woff'),
+    url('Mulish-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
