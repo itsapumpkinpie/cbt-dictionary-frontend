@@ -6,9 +6,53 @@ body {
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   font-size: 18px;
+  font-family: 'Mulish-Extra-Bold', sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button{
+  min-width: 130px;
+  min-height: 40px;
+  padding: 0 15px;
+
+  font-family: 'Mulish-Extra-Bold', sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+
+  border: 0;
+  border-radius: 6px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.ButtonPriming {
+  color: white;
+  background: linear-gradient(90deg, #006498 0%, #00B8D4 100%);
+  &:hover{
+    color: #013A5B;
+    background: none;
+    border: 1px solid #006498;
+  }
+  &:active{
+    color: white;
+    background: linear-gradient(90deg, #980077 0%, #d000bb 100%);
+  }
+}
+.ButtonWhite {
+  border: 1px solid #006498;
+  color: #013A5B;
+  background: none;
+  &:hover{
+    color: white;
+    background: linear-gradient(90deg, #006498 0%, #00B8D4 100%);
+  }
+  &:active{
+    color: #013A5B;
+    background: linear-gradient(90deg, #3c9800 0%, #c2d000 100%);
+  }
 }

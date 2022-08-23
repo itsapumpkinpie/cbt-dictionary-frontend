@@ -8,11 +8,9 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'Mulish';
+    font-family: 'Mulish-Extra-Bold';
     src: local('Mulish-Extra-Bold'),
-    url('Mulish-ExtraBold.woff2') format('woff2'),
-    url('Mulish-ExtraBold.woff') format('woff'),
-    url('Mulish-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
+    url('Mulish-Bold.woff2') format('woff2'),
+    url('Mulish-Bold.woff') format('woff');
     font-style: normal;
 }

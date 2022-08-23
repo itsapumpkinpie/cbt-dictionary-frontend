@@ -5,8 +5,8 @@ import logo from "../../assets/logo/logo64.svg";
 
 const Footer: react.FC = () => {
     return(
-        <footer className={styles.Footer}>
-            <div>
+        <footer>
+            <div className={styles.Footer}>
                 <Image
                     alt="Логотип"
                     src={logo}

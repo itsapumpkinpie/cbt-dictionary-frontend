@@ -1,13 +1,8 @@
 .Footer{
-    position:fixed;
-    bottom: 0;
-    height: 50px;
-    div{
-        width: 140px;
-        display: flex;
-        justify-content: space-around;
-        h2{
-            margin: 0;
-        }
+    width: 140px;
+    display: flex;
+    justify-content: space-around;
+    h2{
+        margin: 0;
     }
 }

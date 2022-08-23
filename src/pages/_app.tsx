@@ -22,13 +22,11 @@ function  MyApp ({ Component, pageProps }: AppProps) {
                 <link rel="stylesheet" href="./fonts/fonts.css" />
             </Head>
             <div className={styles.wrapper}>
-                <div className={styles.pageLayout}>
-                    <Header/>
-                    <main>
-                        <Component {...pageProps} />
-                    </main>
-                    <Footer/>
-                </div>
+                <Header/>
+                <main>
+                    <Component {...pageProps} />
+                </main>
+                <Footer/>
             </div>
         </>
     )
