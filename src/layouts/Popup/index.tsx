@@ -37,21 +37,26 @@ const PopupLayout: React.FC<PopupInterface> = ({
             outPopupNode(ParentNode.parentNode as HTMLElement)
         }
     }
+    const scrollWidth = () => {
+        const div = document.createElement('div');
+        div.style.overflowY = 'scroll';
+        document.body.append(div);
+        const scrollWidth = div.offsetWidth - div.clientWidth;
+        div.remove();
+        return -scrollWidth/2
+    }
 
     const buttonOpenPopup = () => {
         setVisible(true)
         document.body.style.overflow = "hidden";
-        document.body.style.marginLeft = "-8px";
+        document.body.style.marginLeft = `${scrollWidth()}px`;
         document.addEventListener("click", closeOutPopupEvent)
-        console.log(window.innerWidth, document.documentElement.clientWidth)
     }
     const buttonClosePopup = () => {
         setVisible(false)
         document.body.style.overflow = "visible";
         document.body.style.marginLeft = "0";
         document.removeEventListener("click", closeOutPopupEvent)
-
-        console.log(window.innerWidth, document.documentElement.clientWidth)
     }
 
     return (
