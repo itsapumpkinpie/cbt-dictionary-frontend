@@ -1,10 +1,11 @@
-import react from 'react'
+import React from 'react'
 import Image from 'next/image'
 
 import logo from '../../assets/logo/logo64.svg'
+
 import styles from "./Header.module.scss"
 
-const Header: react.FC = () => {
+const Header: React.FC = () => {
     return(
         <header>
             <div className={styles.Header}>
@@ -27,10 +28,10 @@ const Header: react.FC = () => {
                     </span>
                 </div>
                 <div className={styles.AuthBar}>
-                    <button className={ "ButtonWhite" }>
+                    <button className={ styles.ButtonFirst }>
                         Войти
                     </button>
-                    <button className={ "ButtonPriming" }>
+                    <button className={ styles.ButtonSecond }>
                         Регистрация
                     </button>
                 </div>

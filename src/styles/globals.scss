@@ -1,5 +1,8 @@
 html,
 body {
+  width: 100vw;
+  height: 100vh;
+
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -14,45 +17,72 @@ a {
   text-decoration: none;
 }
 
-button{
-  min-width: 130px;
-  min-height: 40px;
-  padding: 0 15px;
+.wrapper{
+  position: absolute;
+  width: 100vw;
 
-  font-family: 'Mulish-Extra-Bold', sans-serif;
-  font-size: 16px;
-  letter-spacing: -0.01em;
-
-  border: 0;
-  border-radius: 6px;
-  &:hover{
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  header{
+    width: 100vw;
   }
-}
-
-.ButtonPriming {
-  color: white;
-  background: linear-gradient(90deg, #006498 0%, #00B8D4 100%);
-  &:hover{
-    color: #013A5B;
-    background: none;
-    border: 1px solid #006498;
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  &:active{
+  footer{
+    position:absolute;
+    bottom: 0;
+    height: 50px;
+  }
+  h1{
+    color: #0089B2;
+    font-family: 'PressStart2P', sans-serif;
+  }
+  button{
+    min-width: 130px;
+    min-height: 40px;
+    padding: 0 15px;
+
+    font-family: 'Mulish-Extra-Bold', sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+
+    border: 0;
+    border-radius: 6px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .ButtonFirst {
+    height: 50px;
     color: white;
-    background: linear-gradient(90deg, #980077 0%, #d000bb 100%);
-  }
-}
-.ButtonWhite {
-  border: 1px solid #006498;
-  color: #013A5B;
-  background: none;
-  &:hover{
-    color: white;
+    margin: 20px;
     background: linear-gradient(90deg, #006498 0%, #00B8D4 100%);
+    &:hover{
+      color: #013A5B;
+      background: none;
+      border: 1px solid #006498;
+    }
+    &:active{
+      color: white;
+      background: linear-gradient(90deg, #980077 0%, #d000bb 100%);
+    }
   }
-  &:active{
-    color: #013A5B;
-    background: linear-gradient(90deg, #3c9800 0%, #c2d000 100%);
+  .ButtonSecond {
+    height: 50px;
+    border: 1px solid #006498;
+    background: none;
+    margin: 0;
+    &:hover{
+      color: white;
+      background: linear-gradient(90deg, #006498 0%, #00B8D4 100%);
+    }
+    &:active{
+      color: #013A5B;
+      background: linear-gradient(90deg, #3c9800 0%, #c2d000 100%);
+    }
   }
 }

@@ -1,27 +1,30 @@
 .Header{
-    min-width: 1680px;
+    max-width: 1680px;
+    min-width: 1080px;
+
     display: flex;
     justify-content: space-between;
+
+    height: 77px;
+    margin: auto;
     .leftMenu{
         display: flex;
         align-items: center;
         justify-content: space-between;
         .logo{
-            min-width: 150px;
             display: inherit;
-            padding-left: 45px;
+            padding-left: 46px;
             h1{
                 padding-left: 15px;
-                font-family: 'PressStart2P', sans-serif;
                 font-size: 1.65em;
                 text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-                color: #0089B2;
             }
         }
         .Toolbar{
             display: inherit;
-            padding-left: 30px;
+            padding-left: 35px;
             p{
+                margin: 0;
                 padding: 15px;
                 font-size: 1.1em;
                 color: hsla(188, 7%, 36%, 1)
@@ -33,7 +36,33 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-right: 105px;
         padding-bottom: 2px;
+        padding-right: 106px;
+        .ButtonFirst {
+            color: white;
+            background: linear-gradient(90deg, #006498 0%, #00B8D4 100%);
+            &:hover{
+                color: #013A5B;
+                background: none;
+                border: 1px solid #006498;
+            }
+            &:active{
+                color: white;
+                background: linear-gradient(90deg, #980077 0%, #d000bb 100%);
+            }
+        }
+
+        .ButtonSecond {
+            border: 1px solid #006498;
+            background: none;
+            &:hover{
+                color: white;
+                background: linear-gradient(90deg, #006498 0%, #00B8D4 100%);
+            }
+            &:active{
+                color: #013A5B;
+                background: linear-gradient(90deg, #3c9800 0%, #c2d000 100%);
+            }
+        }
     }
 }

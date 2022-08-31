@@ -1,12 +1,7 @@
-
 import type { AppProps } from 'next/app'
 import Head from "next/head";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-
 import '../styles/globals.scss'
-import styles from "../styles/Home.module.scss";
 
 function  MyApp ({ Component, pageProps }: AppProps) {
     return(
@@ -21,12 +16,9 @@ function  MyApp ({ Component, pageProps }: AppProps) {
                 />
                 <link rel="stylesheet" href="./fonts/fonts.css" />
             </Head>
-            <div className={styles.wrapper}>
-                <Header/>
-                <main>
+
+            <div className={'wrapper'}>
                     <Component {...pageProps} />
-                </main>
-                <Footer/>
             </div>
         </>
     )
