@@ -12,9 +12,9 @@ function  MyApp ({ Component, pageProps }: AppProps) {
                 <link
                     rel="icon"
                     type="image/svg"
-                    href="./logo32.png"
+                    href="/logo32.png"
                 />
-                <link rel="stylesheet" href="./fonts/fonts.css" />
+                <link rel="stylesheet" href="/fonts/fonts.css" />
             </Head>
 
             <div className={'wrapper'}>

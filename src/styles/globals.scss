@@ -10,6 +10,12 @@ body {
 
   font-size: 18px;
   font-family: 'Mulish-Extra-Bold', sans-serif;
+  color: hsla(188, 7%, 36%, 1);
+  strong{
+    color: hsl(192, 8%, 13%);
+    font-size: 1.05em;
+    letter-spacing: -0.022em;
+  }
 }
 
 a {
@@ -40,7 +46,9 @@ a {
   h1{
     color: #0089B2;
     font-family: 'PressStart2P', sans-serif;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
+
   button{
     min-width: 130px;
     min-height: 40px;

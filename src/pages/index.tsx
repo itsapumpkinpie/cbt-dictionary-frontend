@@ -6,9 +6,10 @@ import Footer from "../components/Footer";
 
 import titleGirl from "../assets/img/titleGirl.svg";
 import womanQuestion from "../assets/img/womanQuestion.svg";
-import catAndWoman from "../assets/img/catAndWoman.png";
+import catAndWoman from "../assets/img/catAndWoman.svg";
 
 import styles from '../styles/Home.module.scss'
+import TriangleButton from "../components/stylistics/TriangleButton";
 
 
 const Home: NextPage = () => {
@@ -21,24 +22,20 @@ const Home: NextPage = () => {
                         <Image
                             alt="Титульный Логотип"
                             src={titleGirl}
-                            width={835}
-                            height={620}
+                            width={844}
+                            height={623}
                         />
                     </div>
-                    <div>
-                        <div>
-                            <h1>
-                                ДНЕВНИК КПТ
-                            </h1>
+                    <div className={styles.AboutContent}>
+                        <h1>
+                            ДНЕВНИК КПТ
+                        </h1>
                             <p>
-                                Бесплатный онлайн сервис с возможностью самостоятельного ведения когнитивно-повеченческого дневника.
+                                <strong>Бесплатный онлайн сервис</strong> с возможностью самостоятельного ведения когнитивно-повеченческого дневника.
+                                <br/>
+                                <br/>
+                                Метод <strong>психологической помощи</strong> с одной из наибольшей доказательной базой исследований доказывающих её эффективность
                             </p>
-                            <p>
-                                Метод психологической помощи с одной из наибольшей доказательной базой исследований доказывающих её эффективность                             </p>
-                        </div>
-                        <button className={"ButtonFirst"}>
-                            КАК ВЕСТИ КПТ-ДНЕВНИК?
-                        </button>
                         <button className={"ButtonSecond"}>
                             ЗАРЕГИСТРИРОВАТЬСЯ И
                             <br/>
@@ -47,6 +44,12 @@ const Home: NextPage = () => {
                     </div>
                 </div>
                 <div>
+                    <TriangleButton
+                        hrefId={"keepKptDiary"}
+                        titleName={"Как вести кпт-дневник?"}
+                    />
+                </div>
+                <div id={"keepKptDiary"}>
                     <h2>
                         Как вести кпт-дневник?
                     </h2>
@@ -67,11 +70,12 @@ const Home: NextPage = () => {
                         У вас смутное беспокойство, тревога, раздражение, сопротивление к происходящим событиями во внешней среде или к тому, что происходит внутри вас.
                         Вы чувствуете усталость, которая  не связана с физической нагрузкой — признак пропущенного психического напряжения. Если в момент напряжения опознать само это напряжение, само его влияние на ваш организм и психику уменьшается.
                     </p>
-                    <button>
-                        Компонент 3угольник
-                    </button>
+                    <TriangleButton
+                        hrefId={"FillingOutTheDiary"}
+                        titleName={"Заполняем дневник"}
+                    />
                 </div>
-                <div>
+                <div id={"FillingOutTheDiary"}>
                     <h2>
                         Заполняем дневник
                     </h2>
@@ -91,9 +95,10 @@ const Home: NextPage = () => {
                         4. Как реагировало тело?
                         Что происходило с телом? Как оно реагировало? Где именно? Насколько итенсивно? Есть ли сейчас следы реакции тела?
                     </p>
-                    <button>
-                        Компонент 3угольник
-                    </button>
+                    <TriangleButton
+                        hrefId={"FillingOutTheDiary"}
+                        titleName={"Заполняем дневник"}
+                    />
                 </div>
                 <div>
                     <h2>
@@ -108,9 +113,10 @@ const Home: NextPage = () => {
                     <p>
                         Наша конечная цель — прийти к состоянию, когда мы непосредственно, на месте, в момент, будем опознавать давящее на нас психическое напряжение, чтобы нивелировать его действие и иметь возможность выбора — как реагировать на ситуацию, а не быть автоматическим следствием своих мыслей, эмоций или телесных реакций.
                     </p>
-                    <button>
-                        Компонент 3угольник
-                    </button>
+                    <TriangleButton
+                        hrefId={"FillingOutTheDiary"}
+                        titleName={"Заполняем дневник"}
+                    />
                 </div>
                 <div>
                     <p>
