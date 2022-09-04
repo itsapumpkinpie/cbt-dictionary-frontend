@@ -2,8 +2,9 @@ import type { AppProps } from 'next/app'
 import Head from "next/head";
 
 import '../styles/globals.scss'
+import WrapperLayout from "../layouts/Wrapper";
 
-function  MyApp ({ Component, pageProps }: AppProps) {
+function MyApp ({ Component, pageProps }: AppProps) {
     return(
         <>
             <Head>
@@ -12,14 +13,13 @@ function  MyApp ({ Component, pageProps }: AppProps) {
                 <link
                     rel="icon"
                     type="image/svg"
-                    href="/logo32.png"
+                    href="/logo/logo32.png"
                 />
-                <link rel="stylesheet" href="/fonts/fonts.css" />
             </Head>
 
-            <div className={'wrapper'}>
+            <WrapperLayout>
                     <Component {...pageProps} />
-            </div>
+            </WrapperLayout>
         </>
     )
 }

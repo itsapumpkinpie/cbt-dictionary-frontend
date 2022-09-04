@@ -36,31 +36,5 @@
         justify-content: space-between;
         padding-bottom: 2px;
         padding-right: 106px;
-        .ButtonFirst {
-            color: white;
-            background: linear-gradient(90deg, #006498 0%, #00B8D4 100%);
-            &:hover{
-                color: #013A5B;
-                background: none;
-                border: 1px solid #006498;
-            }
-            &:active{
-                color: white;
-                background: linear-gradient(90deg, #980077 0%, #d000bb 100%);
-            }
-        }
-
-        .ButtonSecond {
-            border: 1px solid #006498;
-            background: none;
-            &:hover{
-                color: white;
-                background: linear-gradient(90deg, #006498 0%, #00B8D4 100%);
-            }
-            &:active{
-                color: #013A5B;
-                background: linear-gradient(90deg, #3c9800 0%, #c2d000 100%);
-            }
-        }
     }
 }

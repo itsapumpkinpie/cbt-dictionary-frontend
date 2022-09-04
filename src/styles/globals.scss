@@ -2,6 +2,7 @@ html,
 body {
   width: 100vw;
   height: 100vh;
+  max-width: 100%;
 
   padding: 0;
   margin: 0;
@@ -11,86 +12,5 @@ body {
   font-size: 18px;
   font-family: 'Mulish-Extra-Bold', sans-serif;
   color: hsla(188, 7%, 36%, 1);
-  strong{
-    color: hsl(192, 8%, 13%);
-    font-size: 1.05em;
-    letter-spacing: -0.022em;
-  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.wrapper{
-  position: absolute;
-  width: 100vw;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  header{
-    width: 100vw;
-  }
-  main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  footer{
-    position:absolute;
-    bottom: 0;
-    height: 50px;
-  }
-  h1{
-    color: #0089B2;
-    font-family: 'PressStart2P', sans-serif;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  }
-
-  button{
-    min-width: 130px;
-    min-height: 40px;
-    padding: 0 15px;
-
-    font-family: 'Mulish-Extra-Bold', sans-serif;
-    font-size: 16px;
-    letter-spacing: -0.01em;
-
-    border: 0;
-    border-radius: 6px;
-    &:hover{
-      cursor: pointer;
-    }
-  }
-  .ButtonFirst {
-    height: 50px;
-    color: white;
-    margin: 20px;
-    background: linear-gradient(90deg, #006498 0%, #00B8D4 100%);
-    &:hover{
-      color: #013A5B;
-      background: none;
-      border: 1px solid #006498;
-    }
-    &:active{
-      color: white;
-      background: linear-gradient(90deg, #980077 0%, #d000bb 100%);
-    }
-  }
-  .ButtonSecond {
-    height: 50px;
-    border: 1px solid #006498;
-    background: none;
-    margin: 0;
-    &:hover{
-      color: white;
-      background: linear-gradient(90deg, #006498 0%, #00B8D4 100%);
-    }
-    &:active{
-      color: #013A5B;
-      background: linear-gradient(90deg, #3c9800 0%, #c2d000 100%);
-    }
-  }
-}

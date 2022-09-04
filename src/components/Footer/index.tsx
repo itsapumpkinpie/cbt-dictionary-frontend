@@ -1,9 +1,9 @@
-import react from 'react'
-import styles from "../Footer/Footer.module.scss";
+import React from 'react'
+import styles from "./Footer.module.scss";
 import Image from "next/image";
-import logo from "../../assets/logo/logo64.svg";
+import logo from "../../../public/logo/logo64.svg";
 
-const Footer: react.FC = () => {
+const Footer: React.FC = () => {
     return(
         <footer>
             <div className={styles.Footer}>

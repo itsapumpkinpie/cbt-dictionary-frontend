@@ -1,0 +1,57 @@
+.WrapperLayout{
+    position: absolute;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    header{
+        width: 100%;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        bottom: 0;
+        height: 50px;
+    }
+    h1{
+        color: #0089B2;
+        font-family: 'PressStart2P', sans-serif;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    strong{
+        color: hsl(192, 8%, 13%);
+        font-size: 1.05em;
+        letter-spacing: -0.022em;
+    }
+
+    button{
+        min-width: 130px;
+        min-height: 40px;
+        padding: 0 5px;
+
+        border: 1px solid #006498;
+        border-radius: 6px;
+        background: none;
+
+        font-family: 'Mulish-Extra-Bold', sans-serif;
+        font-size: 16px;
+        letter-spacing: -0.01em;
+        &:hover{
+            background: linear-gradient(90deg, #FEDC00 0%, #FF8C50 100%);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        &:active{
+            padding-top: 5px;
+        }
+    }
+}

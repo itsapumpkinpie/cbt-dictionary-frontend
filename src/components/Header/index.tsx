@@ -1,8 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 
-import logo from '../../assets/logo/logo64.svg'
+import Registration from "../popups/Registration";
 
+import logo from '../../../public/logo/logo64.svg'
 import styles from "./Header.module.scss"
 
 const Header: React.FC = () => {
@@ -28,12 +29,10 @@ const Header: React.FC = () => {
                     </span>
                 </div>
                 <div className={styles.AuthBar}>
-                    <button className={ styles.ButtonFirst }>
+                    <button>
                         Войти
                     </button>
-                    <button className={ styles.ButtonSecond }>
-                        Регистрация
-                    </button>
+                    <Registration/>
                 </div>
             </div>
         </header>

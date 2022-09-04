@@ -4,9 +4,9 @@ import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-import titleGirl from "../assets/img/titleGirl.svg";
-import womanQuestion from "../assets/img/womanQuestion.svg";
-import catAndWoman from "../assets/img/catAndWoman.svg";
+import titleGirl from "../../public/img/titleGirl.svg";
+import womanQuestion from "../../public/img/womanQuestion.svg";
+import catAndWoman from "../../public/img/catAndWoman.svg";
 
 import styles from '../styles/Home.module.scss'
 import TriangleButton from "../components/stylistics/TriangleButton";
@@ -37,9 +37,7 @@ const Home: NextPage = () => {
                                 Метод <strong>психологической помощи</strong> с одной из наибольшей доказательной базой исследований доказывающих её эффективность
                             </p>
                         <button className={"ButtonSecond"}>
-                            ЗАРЕГИСТРИРОВАТЬСЯ И
-                            <br/>
-                            ПОРОБОВАТЬ
+                            ЗАРЕГИСТРИРОВАТЬСЯ
                         </button>
                     </div>
                 </div>
@@ -95,12 +93,12 @@ const Home: NextPage = () => {
                     </p>
                 </div>
                 <TriangleButton
-                    hrefId={"FillingOutTheDiary"}
-                    titleName={"Заполняем дневник"}
+                    hrefId={"WhyKeepDiary"}
+                    titleName={"Зачем вести дневник?"}
                 />
-                <div>
+                <div id={"WhyKeepDiary"}>
                     <h2>
-                        Заговловок
+                        Зачем вести дневник?
                     </h2>
                     <Image
                         alt="Девушка с котом"
@@ -124,7 +122,7 @@ const Home: NextPage = () => {
                     <button className={"ButtonFirst"}>
                         Регистрация
                     </button>
-                    <button className={"ButtonSecond"}>
+                    <button>
                         Написать нам
                     </button>
                 </div>

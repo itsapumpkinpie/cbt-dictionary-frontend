@@ -6,8 +6,9 @@ interface TriangleButtonInterface {
     titleName: string
 }
 
-const TriangleButton = ( { hrefId, titleName }: TriangleButtonInterface) => {
-
+const TriangleButton: React.FC<TriangleButtonInterface> = (
+    { hrefId, titleName }: TriangleButtonInterface
+    ) => {
     return (
         <div className={style.TriangleLayout}>
             <p>
