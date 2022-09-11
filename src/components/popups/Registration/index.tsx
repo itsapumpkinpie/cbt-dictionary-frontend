@@ -1,4 +1,5 @@
 import React from 'react';
+
 import PopupLayout from "../../../layouts/Popup";
 
 import styles from "./Registration.module.scss";

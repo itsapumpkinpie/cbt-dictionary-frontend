@@ -44,6 +44,7 @@
         font-family: 'Mulish-Extra-Bold', sans-serif;
         font-size: 16px;
         letter-spacing: -0.01em;
+        user-select: none;
         &:hover{
             background: linear-gradient(90deg, #FEDC00 0%, #FF8C50 100%);
             color: white;
@@ -51,6 +52,7 @@
             cursor: pointer;
         }
         &:active{
+
             padding-top: 5px;
         }
     }

@@ -18,23 +18,46 @@ const PopupLayout: React.FC<PopupInterface> = ({
     NamePopup,
     conformButton,
 }) => {
-
     const [visible, setVisible] = React.useState(false)
+
+    const closeOutPopupEvent = (event: MouseEvent) => {
+        const target = event.target as HTMLElement
+        if (target.id !== "popupOpenButton"){
+            outPopupNode(target as HTMLElement)
+            // console.log("closeOutPopupEvent")
+        }
+    }
+
+    const outPopupNode = (ParentNode: HTMLElement | null ) => {
+        if (ParentNode === null) {
+        } else if (ParentNode.id === "PopupWrapper" ) {
+        } else if (ParentNode === document.body || ParentNode.id === "buttonClosePopup" ) {
+            buttonClosePopup()
+        } else{
+            outPopupNode(ParentNode.parentNode as HTMLElement)
+        }
+    }
 
     const buttonOpenPopup = () => {
         setVisible(true)
         document.body.style.overflow = "hidden";
         document.body.style.marginLeft = "-8px";
+        document.addEventListener("click", closeOutPopupEvent)
+        console.log(window.innerWidth, document.documentElement.clientWidth)
     }
     const buttonClosePopup = () => {
         setVisible(false)
         document.body.style.overflow = "visible";
         document.body.style.marginLeft = "0";
+        document.removeEventListener("click", closeOutPopupEvent)
+
+        console.log(window.innerWidth, document.documentElement.clientWidth)
     }
 
     return (
         <>
-            <button className={buttonProperty.className}
+            <button id={"popupOpenButton"}
+                    className={buttonProperty.className}
                     onClick={ buttonOpenPopup }
             >
                 { buttonProperty.name }
@@ -42,17 +65,17 @@ const PopupLayout: React.FC<PopupInterface> = ({
             {
                 (visible)
                 ?<div className={styles.PopupWrapperLayout}>
-                    <div className={styles.PopupWrapper} >
+                    <div id={"PopupWrapper"} className={styles.PopupWrapper} >
                         <h2>{ NamePopup }</h2>
                         { children }
-                        <div>
+                        <div className={styles.popupButtonForm}>
                             <button
                                 onClick={conformButton}
                             >
                                 { buttonProperty.name }
                             </button>
                             <button
-                                onClick={buttonClosePopup}
+                                id={"buttonClosePopup"}
                             >
                                 Отмена
                             </button>

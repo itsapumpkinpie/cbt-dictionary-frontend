@@ -5,6 +5,7 @@ import Registration from "../popups/Registration";
 
 import logo from '../../../public/logo/logo64.svg'
 import styles from "./Header.module.scss"
+import Login from "../popups/Login";
 
 const Header: React.FC = () => {
     return(
@@ -29,9 +30,7 @@ const Header: React.FC = () => {
                     </span>
                 </div>
                 <div className={styles.AuthBar}>
-                    <button>
-                        Войти
-                    </button>
+                    <Login/>
                     <Registration/>
                 </div>
             </div>
