@@ -24,7 +24,6 @@ const PopupLayout: React.FC<PopupInterface> = ({
         const target = event.target as HTMLElement
         if (target.id !== "popupOpenButton"){
             outPopupNode(target as HTMLElement)
-            // console.log("closeOutPopupEvent")
         }
     }
 
