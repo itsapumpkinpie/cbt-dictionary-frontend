@@ -1,4 +1,14 @@
 .Home{
+  h2{
+    font-size: 48px;
+    margin: 0;
+  }
+  h3{
+    font-size: 28px;
+  }
+  p{
+    font-size: 28px;
+  }
   .About{
     min-height: 660px;
     display: flex;
@@ -16,12 +26,53 @@
         letter-spacing: -0.022em;
       }
       p{
+        font-family: 'Mulish-Extra-Bold', sans-serif;
         padding-top: 37px;
         padding-left: 43px;
         width: 745px;
         line-height: 40px;
         font-size: 28px;
       }
+    }
+  }
+  .keepKptDiary{
+    width: 1400px;
+    padding-top: 90px;
+    display: flex;
+    .keepKptDiaryText{
+      width: 840px;
+      height: 740px;
+    }
+  }
+  .FillingOutTheDiary{
+    width: 1510px;
+    padding-top: 60px;
+    margin: auto;
+    h2{
+      text-align: center;
+    }
+    .FillingOutTheDiaryText{
+      height: 540px;
+      padding: 80px 0 80px 0;
+      display: flex;
+      justify-content: space-between;
+      div{
+        p{
+          width: 650px;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+  }
+  .WhyKeepDiary{
+    width: 1360px;
+    padding: 200px 0 160px 0;
+    display: flex;
+    .WhyKeepDiaryText{
+      width: 800px;
+      padding-right: 100px;
     }
   }
 }

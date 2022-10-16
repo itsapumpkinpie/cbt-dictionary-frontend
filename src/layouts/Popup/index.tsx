@@ -32,10 +32,11 @@ const PopupLayout: React.FC<PopupInterface> = ({
         } else if (ParentNode.id === "PopupWrapper" ) {
         } else if (ParentNode === document.body || ParentNode.id === "buttonClosePopup" ) {
             buttonClosePopup()
-        } else{
+        } else {
             outPopupNode(ParentNode.parentNode as HTMLElement)
         }
     }
+
     const scrollWidth = () => {
         const div = document.createElement('div');
         div.style.overflowY = 'scroll';
@@ -51,6 +52,7 @@ const PopupLayout: React.FC<PopupInterface> = ({
         document.body.style.marginLeft = `${scrollWidth()}px`;
         document.addEventListener("click", closeOutPopupEvent)
     }
+
     const buttonClosePopup = () => {
         setVisible(false)
         document.body.style.overflow = "visible";

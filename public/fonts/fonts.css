@@ -14,3 +14,11 @@
     url('Mulish-Bold.woff') format('woff');
     font-style: normal;
 }
+@font-face {
+    font-family: 'Mulish-Regular';
+    src: local('Mulish-Regular'),
+    url('Mulish-Regular.ttf') format('truetype'),
+    url('Mulish-Regular.woff2') format('woff2'),
+    url('Mulish-Regular.woff') format('woff');
+    font-style: normal;
+}
