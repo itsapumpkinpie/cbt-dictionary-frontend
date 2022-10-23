@@ -3,13 +3,14 @@ import Image from "next/image";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import TriangleButton from "../components/stylistics/TriangleButton";
+import Registration from "../components/popups/Registration";
 
 import titleGirl from "../../public/img/titleGirl.svg";
 import womanQuestion from "../../public/img/womanQuestion.svg";
 import catAndWoman from "../../public/img/catAndWoman.svg";
 
 import styles from '../styles/Home.module.scss'
-import TriangleButton from "../components/stylistics/TriangleButton";
 
 
 const Home: NextPage = () => {
@@ -17,7 +18,7 @@ const Home: NextPage = () => {
         <>
             <Header/>
             <main className={styles.Home}>
-                <div className={styles.About}>
+                <div  id={"About"} className={styles.About}>
                     <div className={styles.titleGirl}>
                         <Image
                             alt="Титульный Логотип"
@@ -43,7 +44,7 @@ const Home: NextPage = () => {
                 </div>
                 <TriangleButton
                     hrefId={"keepKptDiary"}
-                    titleName={"Как вести кпт-дневник?"}
+                    titleNameUp={"Как вести кпт-дневник?"}
                 />
                 <div id={"keepKptDiary"}  className={styles.keepKptDiary}>
                     <div className={styles.keepKptDiaryText}>
@@ -75,7 +76,7 @@ const Home: NextPage = () => {
                 </div>
                 <TriangleButton
                     hrefId={"FillingOutTheDiary"}
-                    titleName={"Заполняем дневник"}
+                    titleNameUp={"Заполняем дневник"}
                 />
                 <div id={"FillingOutTheDiary"} className={styles.FillingOutTheDiary} >
                     <h2>
@@ -106,7 +107,7 @@ const Home: NextPage = () => {
                 </div>
                 <TriangleButton
                     hrefId={"WhyKeepDiary"}
-                    titleName={"Зачем вести дневник?"}
+                    titleNameUp={"Зачем вести дневник?"}
                 />
                 <div id={"WhyKeepDiary"} className={styles.WhyKeepDiary}>
                     <div className={styles.WhyKeepDiaryText}>
@@ -125,21 +126,23 @@ const Home: NextPage = () => {
                     />
                 </div>
                 <TriangleButton
-                    hrefId={"FillingOutTheDiary"}
-                    titleName={"Заполняем дневник"}
+                    hrefId={"infoProject"}
+                    titleNameUp={"Информация о нас"}
                 />
-                <div>
+                <div id={"infoProject"} className={styles.infoProject}>
                     <p>
-                        Регистрируйтесь и пробуйте вести дневник!
+                        Регистрируйтесь и пробуйте вести дневник! <br/>
                         Или напишите нам, если у вас остались вопросы.
                     </p>
-                    <button className={"ButtonFirst"}>
-                        Регистрация
-                    </button>
+                    <Registration/>
                     <button>
                         Написать нам
                     </button>
                 </div>
+                <TriangleButton
+                    hrefId={"Header"}
+                    titleNameDown={"Вернуться наверх"}
+                />
             </main>
             <Footer/>
         </>

@@ -3,24 +3,28 @@ import style from "./triangle.module.scss"
 
 interface TriangleButtonInterface {
     hrefId: string
-    titleName: string
+    titleNameUp?: string
+    titleNameDown?: string
 }
 
 const TriangleButton: React.FC<TriangleButtonInterface> = (
-    { hrefId, titleName }: TriangleButtonInterface
+    { hrefId, titleNameUp, titleNameDown }: TriangleButtonInterface
     ) => {
     return (
         <div className={style.TriangleLayout}>
             <p>
-                {titleName}
+                {titleNameUp}
             </p>
             <a
                 className={style.Triangle}
                 href={`#${hrefId}`}
-                title={titleName}
+                title={hrefId}
             >
-                <div className={style.TriangleButton}/>
+                <div className={`${style.TriangleButton} ${(titleNameUp) ?style.Down : style.Up}`}/>
             </a>
+            <p>
+                {titleNameDown}
+            </p>
         </div>
     );
 };

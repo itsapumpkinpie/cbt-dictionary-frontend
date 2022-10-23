@@ -12,7 +12,7 @@ const Login = () => {
     return (
         <PopupLayout
             NamePopup={"Авторизация"}
-            buttonProperty={{name: "Войти", className: styles.buttonLogin } }
+            buttonProperty={{name: "Войти", className: "loginPopupButton" } }
             conformButton={sendLogin}
         >
             Login

@@ -1,7 +1,4 @@
 .TriangleLayout{
-    min-height: 5vh;
-    height: 100px;
-    margin-bottom: 10px;
     p{
         margin: 5px;
     }
@@ -10,19 +7,28 @@
         margin: auto;
         left: 0;
         right: 0;
-        width: 102px;
+        width: 96px;
         border-top: 2px solid #00B8D4;
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
         cursor: pointer;
         .TriangleButton{
-            margin: -36px 15px;
+            position: relative;
             width: 70px;
             height: 70px;
-            transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
             border-right: 2px solid #00B8D4;
             border-bottom: 2px solid #00B8D4;
+            border-radius: 5px;
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        .Down{
+            margin: -36px 12px;
+            transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+        }
+        .Up{
+            margin: -39px 12px;
+            transform: rotate(225deg);
+            -ms-transform: rotate(225deg);
         }
     }
 }

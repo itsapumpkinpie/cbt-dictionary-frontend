@@ -22,7 +22,7 @@ const PopupLayout: React.FC<PopupInterface> = ({
 
     const closeOutPopupEvent = (event: MouseEvent) => {
         const target = event.target as HTMLElement
-        if (target.id !== "popupOpenButton"){
+        if (target.className !== buttonProperty.className){
             outPopupNode(target as HTMLElement)
         }
     }
@@ -62,7 +62,7 @@ const PopupLayout: React.FC<PopupInterface> = ({
 
     return (
         <>
-            <button id={"popupOpenButton"}
+            <button
                     className={buttonProperty.className}
                     onClick={ buttonOpenPopup }
             >
@@ -72,7 +72,7 @@ const PopupLayout: React.FC<PopupInterface> = ({
                 (visible)
                 ?<div className={styles.PopupWrapperLayout}>
                     <div id={"PopupWrapper"} className={styles.PopupWrapper} >
-                        <h2>{ NamePopup }</h2>
+                        <h2 className={styles.popupHeadName}>{ NamePopup }</h2>
                         { children }
                         <div className={styles.popupButtonForm}>
                             <button

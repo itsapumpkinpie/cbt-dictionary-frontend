@@ -11,6 +11,7 @@
   }
   .About{
     min-height: 660px;
+    height: 70vh;
     display: flex;
     padding-top: 85px;
     .titleGirl{
@@ -37,7 +38,10 @@
   }
   .keepKptDiary{
     width: 1400px;
+    min-height: 680px;
+    height: 78vh;
     padding-top: 90px;
+    margin-top: 90px;
     display: flex;
     .keepKptDiaryText{
       width: 840px;
@@ -47,7 +51,7 @@
   .FillingOutTheDiary{
     width: 1510px;
     padding-top: 60px;
-    margin: auto;
+    margin-top: 60px;
     h2{
       text-align: center;
     }
@@ -68,11 +72,21 @@
   }
   .WhyKeepDiary{
     width: 1360px;
-    padding: 200px 0 160px 0;
+    padding: 200px 0 160px;
+    margin-top: 160px;
     display: flex;
     .WhyKeepDiaryText{
       width: 800px;
       padding-right: 100px;
     }
+  }
+  .infoProject{
+    width: 80vw;
+    margin: 330px 0 200px;
+    height: 340px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(0, 100, 152, 0.1) 0%, rgba(0, 184, 212, 0.1) 100%);
   }
 }

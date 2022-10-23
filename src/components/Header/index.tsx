@@ -10,7 +10,7 @@ import Login from "../popups/Login";
 const Header: React.FC = () => {
     return(
         <header>
-            <div className={styles.Header}>
+            <div id={'Header'} className={styles.Header}>
                 <div className={styles.leftMenu}>
                     <div className={styles.logo}>
                         <Image

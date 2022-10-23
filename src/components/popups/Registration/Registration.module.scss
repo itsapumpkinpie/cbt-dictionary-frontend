@@ -1,5 +1,8 @@
-.Registration{
-    .buttonRegistration{
-
+.buttonRegistration{
+    &:active{
+        background: linear-gradient(90deg, #d9bb00 0%, #d9aa44 100%);
     }
+}
+.Registration{
+
 }

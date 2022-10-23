@@ -1,5 +1,5 @@
 .PopupWrapperLayout{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 
@@ -23,8 +23,9 @@
 
         border: 1px solid  hsl(188deg, 7%, 36%);
         background: white;
-        h2{
-            margin-top: 0;
+        .popupHeadName{
+            margin: 0 0 20px;
+            font-size: 2em;
         }
         .popupButtonForm{
             max-width: 500px;
