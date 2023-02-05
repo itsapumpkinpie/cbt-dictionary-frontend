@@ -7,7 +7,7 @@ interface TriangleButtonInterface {
     titleNameDown?: string
 }
 
-const TriangleButton: React.FC<TriangleButtonInterface> = (
+export const TriangleButton: React.FC<TriangleButtonInterface> = (
     { hrefId, titleNameUp, titleNameDown }: TriangleButtonInterface
     ) => {
     return (
@@ -28,5 +28,3 @@ const TriangleButton: React.FC<TriangleButtonInterface> = (
         </div>
     );
 };
-
-export default TriangleButton;

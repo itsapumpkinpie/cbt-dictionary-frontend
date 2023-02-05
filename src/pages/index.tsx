@@ -1,17 +1,16 @@
 import type { NextPage } from 'next'
 import Image from "next/image";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import TriangleButton from "../components/stylistics/TriangleButton";
-import Registration from "../components/popups/Registration";
+import {Header} from "../components/Header";
+import {Footer} from "../components/Footer";
+import {TriangleButton} from "../components/stylistics/TriangleButton";
+import {Registration} from "../components/popups/Registration";
 
 import titleGirl from "../../public/img/titleGirl.svg";
 import womanQuestion from "../../public/img/womanQuestion.svg";
 import catAndWoman from "../../public/img/catAndWoman.svg";
 
 import styles from '../styles/Home.module.scss'
-
 
 const Home: NextPage = () => {
     return (
@@ -148,5 +147,4 @@ const Home: NextPage = () => {
         </>
     )
 }
-
 export default Home

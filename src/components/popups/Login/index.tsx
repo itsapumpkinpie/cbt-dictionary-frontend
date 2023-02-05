@@ -1,9 +1,9 @@
 import React from 'react';
 
-import PopupLayout from "../../../layouts/Popup";
+import {PopupLayout} from "../../../layouts/Popup";
 import styles from "./Login.module.scss";
 
-const Login = () => {
+export const Login = () => {
 
     const sendLogin = () => {
         console.log("Login")
@@ -19,6 +19,3 @@ const Login = () => {
         </PopupLayout>
     );
 }
-
-
-export default Login;

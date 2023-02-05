@@ -1,12 +1,12 @@
 import React from 'react';
 
-import PopupLayout from "../../../layouts/Popup";
+import {PopupLayout} from "../../../layouts/Popup";
 
 import styles from "./Registration.module.scss";
 
 
 
-const Registration = () => {
+export const Registration = () => {
 
     const sendRegistration = () => {
         console.log("Регистрация")
@@ -22,5 +22,3 @@ const Registration = () => {
         </PopupLayout>
     );
 };
-
-export default Registration;

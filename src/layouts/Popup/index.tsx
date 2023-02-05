@@ -12,7 +12,7 @@ interface PopupInterface {
     conformButton: () => void;
 }
 
-const PopupLayout: React.FC<PopupInterface> = ({
+export const PopupLayout: React.FC<PopupInterface> = ({
     children,
     buttonProperty,
     NamePopup,
@@ -93,6 +93,4 @@ const PopupLayout: React.FC<PopupInterface> = ({
             }
         </>
     );
-};
-
-export default PopupLayout;
+}

@@ -1,13 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
 
-import Registration from "../popups/Registration";
+import {Registration} from "../popups/Registration";
+import {Login} from "../popups/Login";
 
 import logo from '../../../public/logo/logo64.svg'
 import styles from "./Header.module.scss"
-import Login from "../popups/Login";
 
-const Header: React.FC = () => {
+
+export const Header: React.FC = () => {
     return(
         <header>
             <div id={'Header'} className={styles.Header}>
@@ -37,5 +38,3 @@ const Header: React.FC = () => {
         </header>
     )
 }
-
-export default Header
