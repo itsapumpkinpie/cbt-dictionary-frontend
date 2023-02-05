@@ -3,7 +3,7 @@ import styles from "./Footer.module.scss";
 import Image from "next/image";
 import logo from "../../../public/logo/logo64.svg";
 
-const Footer: React.FC = () => {
+export const Footer: React.FC = () => {
     return(
         <footer>
             <div className={styles.Footer}>
@@ -20,4 +20,3 @@ const Footer: React.FC = () => {
         </footer>
     )
 }
-export default Footer

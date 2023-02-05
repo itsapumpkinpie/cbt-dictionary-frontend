@@ -2,7 +2,7 @@ import type { AppProps } from 'next/app'
 import Head from "next/head";
 
 import '../styles/globals.scss'
-import WrapperLayout from "../layouts/Wrapper";
+import {WrapperLayout} from "../processes/Wrapper";
 
 function MyApp ({ Component, pageProps }: AppProps) {
     return(
@@ -23,5 +23,4 @@ function MyApp ({ Component, pageProps }: AppProps) {
         </>
     )
 }
-
 export default MyApp
